@@ -30,32 +30,38 @@ namespace Calculator
 
         private void button1_Click(object sender, EventArgs e)
         {
+            forNumbers(sender);
+        }
+        private void forNumbers(object sender) // для работы с цифрами
+        {
+            if (pressYes)
+            {
+                str = "";
+                pressYes = false;
+            }
             str += (sender as Button).Text;
             textBox1.Text = str;
         }
 
+
         private void button2_Click(object sender, EventArgs e)
         {
-            str += (sender as Button).Text;
-            textBox1.Text = str;
+            forNumbers(sender);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            str += (sender as Button).Text;
-            textBox1.Text = str;
+            forNumbers(sender);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            str += (sender as Button).Text;
-            textBox1.Text = str;
+            forNumbers(sender);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            str += (sender as Button).Text;
-            textBox1.Text = str;
+            forNumbers(sender);
         }
 
         private void button6_Click(object sender, EventArgs e)
