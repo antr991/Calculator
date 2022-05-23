@@ -23,6 +23,7 @@ namespace Calculator
         public int mode = 1;
         public string str = "";
         public string predstr = "";
+        public bool pressYes = false;
         public Form1()
         {
             InitializeComponent();
